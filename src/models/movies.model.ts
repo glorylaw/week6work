@@ -104,7 +104,7 @@ export async function editMovie(movie: Movie, id: string) {
   }
 }
 
-//Delete Author
+//Delete Movie
 export async function removeMovie(id: string) {
   const pathName: string = path.join(__dirname, "movies.json");
   try {

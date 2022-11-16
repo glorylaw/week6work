@@ -4,7 +4,7 @@ import { validateToken } from '../middleware/auth';
 const router = express.Router();
 
 /* GET users listing. */
-router.get('/movies', validateToken, getMovies );
+router.get('/movies', getMovies );
 
 router.post('/add-movie', validateToken, createMovie)
 router.get('/add_movies', validateToken, create_movie)

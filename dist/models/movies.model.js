@@ -152,7 +152,7 @@ function editMovie(movie, id) {
     });
 }
 exports.editMovie = editMovie;
-//Delete Author
+//Delete Movie
 function removeMovie(id) {
     return __awaiter(this, void 0, void 0, function* () {
         const pathName = path_1.default.join(__dirname, "movies.json");

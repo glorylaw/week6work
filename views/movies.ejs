@@ -11,9 +11,9 @@
     <div>
       <a class="btn btn-outline-primary m-2 mt-3" href="/movie/add_movies">Add Movie</a>
     </div>
-    <div class="container-fluid d-flex p-2">
+    <div class="container-fluid d-flex flex-wrap p-2" >
           <% if (movies){ %> <% for(let i = 0; i < movies.length; i++){%>
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem; margin: 5% 5%;">
               <img src="<%= movies[i].image %>" class="card-img-top img-fluid rounded" alt="movies list">
               <div class="card-body">
                 <h5 class="card-title"><%= movies[i].title %></h5>

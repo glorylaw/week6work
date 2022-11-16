@@ -8,7 +8,7 @@ const movies_controller_1 = require("../controllers/movies.controller");
 const auth_1 = require("../middleware/auth");
 const router = express_1.default.Router();
 /* GET users listing. */
-router.get('/movies', auth_1.validateToken, movies_controller_1.getMovies);
+router.get('/movies', movies_controller_1.getMovies);
 router.post('/add-movie', auth_1.validateToken, movies_controller_1.createMovie);
 router.get('/add_movies', auth_1.validateToken, movies_controller_1.create_movie);
 router.put("/edit-movie/:id", auth_1.validateToken, movies_controller_1.updateMovie);
